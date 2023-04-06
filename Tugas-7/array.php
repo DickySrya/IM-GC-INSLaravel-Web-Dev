@@ -57,7 +57,7 @@
 
         /*
             SOAL No 3
-            Susun data-data berikut ke dalam bentuk Asosiatif Array (Array Multidimensi)
+            Susun data-data berikut ke dalam bentuk Asosiatif Array didalam Array Multidimensi
             
             Name: "Will Byers"
             Age: 12,
@@ -78,37 +78,52 @@
             Age: 12,
             Aliases: "El"
             Status: "Alive"
+
+            Output:
+            Array 
+            (
+                [0] => Array
+                (
+                    [Name] => Will Byers
+                    [Age] => 12
+                    [Aliases] => Will the Wise
+                    [Status] => Alive
+                )
+                [1] => Array
+                (
+                    [Name] => Mike Wheeler
+                    [Age] => 12
+                    [Aliases] => Dugeon Master
+                    [Status] => Alive
+                )
+                [2] => Array
+                (
+                    [Name] => Jim Hopper
+                    [Age] => 43
+                    [Aliases] => Chief Hopper
+                    [Status] => Deceased
+                )
+                [3] => Array
+                (
+                    [Name] => Eleven
+                    [Age] => 12
+                    [Aliases] => El
+                    [Status] => Alive
+                )
+                
+            )
             
         */
-        echo "<h3> Soal 3</h3>";
-       
-        $data = array(
-            array("Will Byers","Mike Wheeler","Jim Hopper","Eleven"),
-            array(12,43,),
-            array("Will the Wise","Dungeon Master","Chief Hopper","El"),
-            array("Alive","Deceased")
-        );
-        
-        echo "Name: ".$data[0][0]. "<br>";
-        echo "Age: ".$data[1][0]. "<br>";
-        echo "Aliases: ".$data[2][0]. "<br>";
-        echo "Status: ".$data[3][0]. "<br>";
-        echo "<br>";
-        echo "Name: ".$data[0][1]. "<br>";
-        echo "Age: ".$data[1][0]. "<br>";
-        echo "Aliases: ".$data[2][1]. "<br>";
-        echo "Status: ".$data[3][0]. "<br>";
-        echo "<br>";
-        echo "Name: ".$data[0][2]. "<br>";
-        echo "Age: ".$data[1][1]. "<br>";
-        echo "Aliases: ".$data[2][2]. "<br>";
-        echo "Status: ".$data[3][1]. "<br>";
-        echo "<br>";
-        echo "Name: ".$data[0][3]. "<br>";
-        echo "Age: ".$data[1][0]. "<br>";
-        echo "Aliases: ".$data[2][3]. "<br>";
-        echo "Status: ".$data[3][0]. "<br>";
+        echo "<h3> Soal 3 </h3>";
 
+        $data = array ( array("Nama"=>"Will Byers","Age"=>"12","Aliases"=>"Will the Wise","Status"=>"Alive"), 
+        array("Nama"=>"Mike Wheeler","Age"=>"12","Aliases"=>"Dugeon Master","Status"=>"Alive"), 
+        array("Nama"=>"Jim Hooper","Age"=>"43","Aliases"=>"Chief Hopper","Status"=>"Deceased"),
+        array("Nama"=>"Eleven","Age"=>"43","Aliases"=>"El","Status"=>"Alive")); 
+        echo "<pre>"; 
+        print_r($data); 
+        echo "</pre>";
+            
                 
     ?>
 </body>

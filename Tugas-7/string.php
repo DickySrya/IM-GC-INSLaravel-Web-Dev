@@ -25,8 +25,12 @@
         $second_sentence = "I'm ready for the challenges"; // Panjang string: 28,  jumlah kata: 5
 
         // code
-        echo "Panjang string : ".strlen($first_sentence) . "<br>";
-        echo "Panjang string :".strlen($second_sentence); 
+        echo "<label>Hello PHP!</label> <br>";
+        echo "Panjang string : ".strlen($first_sentence) .  "Jumlah Kata : ". str_word_count($first_sentence). "<br>"."<br>"; 
+        echo "<label>I'm ready for the challenges</label> <br>";
+        echo "Panjang string :".strlen($second_sentence). "Jumlah Kata : ". str_word_count($second_sentence);
+        
+
         
         echo "<h3> Soal No 2</h3>";
         /* 
